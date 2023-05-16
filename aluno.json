@@ -1,0 +1,32 @@
+{
+  "aluno": [
+    {
+      "id": 1,
+      "nome": "Josevaldo",
+      "responsavel": "josenilson",
+      "email": "Josenilson@gmail.com",
+      "sala": "2-B"
+    },
+    {
+      "id": 2,
+      "nome": "Creuso",
+      "responsavel": "Creusa",
+      "email": "creusa@gmail.com",
+      "sala": "1-A"
+    },
+    {
+      "id": 3,
+      "nome": "alex",
+      "responsavel": "alexpai",
+      "email": "alexpai@gmail.com",
+      "sala": "1-A"
+    },
+    {
+      "id": 4,
+      "nome": "Johnson",
+      "responsavel": "Julius",
+      "email": "julius@gmail.com",
+      "sala": "2-B"
+    }
+  ]
+}

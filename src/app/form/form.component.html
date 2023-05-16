@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-8 m-auto">
+    <form [formGroup]="formGroupAluno">
+
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="email" formControlName="nome" class="form-control" id="nome" placeholder="nome">
+      </div>
+
+      <div class="mb-3">
+        <label for="responsavel" class="form-label">Nome do Responsavel:</label>
+        <input type="email" formControlName="responsavel" class="form-control" id="responsavel" placeholder="Responsavel">
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email do Responsavel:</label>
+        <input type="email" formControlName="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="sala" class="form-label">Sala:</label>
+        <input type="email" formControlName="sala" class="form-control" id="sala" placeholder="A">
+      </div>
+
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="Save()">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Responsavel</th>
+        <th scope="col">Email</th>
+        <th scope="col">Sala</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aluno of aluno">
+        <th scope="row">{{aluno.id}}</th>
+        <td>{{aluno.nome}}</td>
+        <td>{{aluno.responsavel}}</td>
+        <td>{{aluno.email}}</td>
+        <td>{{aluno.sala}}</td>
+      </tr>
+    </tbody>
+</table>
